@@ -11,6 +11,7 @@
   display: flex;
   flex-direction: column;
   height: 100vh;
+  width: 100vw;
 }
 
 nav {
@@ -44,16 +45,15 @@ nav {
   transition: all 100ms linear;
 }
 
-main {
-  flex: 1;
-  max-width: 868px;
-  margin: 1rem auto;
+.nav-item-container a:visited {
+  color: inherit;
 }
 
-main div {
+main {
+  flex: 1;
+  margin: 1rem 4rem;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
 }
 
 .wp-content {

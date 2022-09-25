@@ -3,12 +3,9 @@ import fetchPages from '../lib/fetchPages'
 
 export default function ({ page }) {
   return (
-    <div>
+    <div className="wp-content">
       <h1>{page.title.rendered}</h1>
-      <div
-        className="wp-content"
-        dangerouslySetInnerHTML={{ __html: page.content.rendered }}
-      />
+      <div dangerouslySetInnerHTML={{ __html: page.content.rendered }} />
     </div>
   )
 }
