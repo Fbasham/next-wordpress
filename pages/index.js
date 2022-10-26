@@ -19,11 +19,6 @@ export default function Home({ pages }) {
 }
 
 export async function getStaticProps(ctx) {
-  let res = await fetch(
-    `http://localhost/wordpress/index.php/wp-json/tribe/events/v1/events`,
-  )
-  console.log(await res.json())
-
   let pages = await fetchPages()
   return {
     props: { pages },
